@@ -35,12 +35,12 @@ saveBtn.addEventListener("click", () => {
   const birth = Number(birthInput.value.slice(0, 4)); 
   const genderInput = document.querySelector("#gender");
 
-  // if(!name || !age || !email || !hobby || !birth ) {
-  //       return alert("inputlarni to'ldiring");
-  //   } else {
-  //       alert("Tizimga muvaffaqiyatli kirildi !");
-  //       window.location.href = "https://github.com/sarvaribrokhimov001?tab=repositories";
-  //   }
+  if(!name || !age || !email || !hobby || !birth ) {
+        return alert("inputlarni to'ldiring");
+    } else {
+        alert("Tizimga muvaffaqiyatli kirildi !");
+        window.location.href = "https://github.com/sarvaribrokhimov001?tab=repositories";
+    }
 
   if (!validateEmail(email)) {
     output.innerHTML = `<p style="color:red;"> Email da @ belgisi bo‘lishi shart! </p>`;
@@ -63,12 +63,12 @@ saveBtn.addEventListener("click", () => {
     </p>
   `;
 
-  if(!name || !age || !email || !hobby || !birth ) {
-        return alert("inputlarni to'ldiring");
-    } else {
-        alert("Tizimga muvaffaqiyatli kirildi !");
-        window.location.href = "https://github.com/sarvaribrokhimov001?tab=repositories";
-    }
+  // if(!name || !age || !email || !hobby || !birth ) {
+  //       return alert("inputlarni to'ldiring");
+  //   } else {
+  //       alert("Tizimga muvaffaqiyatli kirildi !");
+  //       window.location.href = "https://github.com/sarvaribrokhimov001?tab=repositories";
+  //   }
 });
 
 let genderText = "";
