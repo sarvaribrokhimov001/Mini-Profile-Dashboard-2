@@ -1,0 +1,58 @@
+.navbar {
+    width: 100%;
+    height: 80px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+    &__logo {
+        font-size: 42px;
+        color: rgb(106, 255, 106);
+        margin-right: 100px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 60px;
+        margin: 0px 150px;   
+    }
+
+    &__link {
+        font-size: 18px;
+        color: cyan;
+    }
+
+    &__link:hover {
+        color: red;
+    }
+
+    &__link:active {
+        color: green;
+    }
+}
+
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+
+    &__logo {
+      font-size: 28px;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
+    &__links {
+      flex-direction: column;
+      gap: 20px;
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
