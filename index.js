@@ -2,12 +2,12 @@ alert("Assalomu alaykum");
 alert("Mini Profile Dashboard 2 ga xush kelibsiz !");
 alert("Ushbu loyihada style lar huddi oldingisiga o'xshaydi ");
 alert("Biroq ushbu loyihada boshqa interaktiv funksiyalar ham qo'shilgan");
+
 const nameInput = document.querySelector(".input_1");
 const ageInput = document.querySelector(".input_2");
 const emailInput = document.querySelector(".input_3");
 const hobbyInput = document.querySelector(".input_4");
 const birthInput = document.querySelector(".input_5");
-
 const saveBtn = document.querySelector(".profile__button");
 const clearBtn = document.querySelector(".profile__btn");
 const output = document.querySelector(".output");
@@ -27,7 +27,6 @@ function calculateAge(birthYear) {
 }
 
 saveBtn.addEventListener("click", () => {
-  
   const name = nameInput.value;
   const age = Number(ageInput.value);
   const email = emailInput.value;
@@ -62,13 +61,6 @@ saveBtn.addEventListener("click", () => {
       <strong> gender: </strong> ${gender}
     </p>
   `;
-
-  // if(!name || !age || !email || !hobby || !birth ) {
-  //       return alert("inputlarni to'ldiring");
-  //   } else {
-  //       alert("Tizimga muvaffaqiyatli kirildi !");
-  //       window.location.href = "https://github.com/sarvaribrokhimov001?tab=repositories";
-  //   }
 });
 
 let genderText = "";
